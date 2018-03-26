@@ -18,6 +18,7 @@ public class FormActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(FormActivity.this, "Save button clicked!", Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }
