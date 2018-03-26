@@ -37,12 +37,6 @@
             android:layout_gravity="center"
             android:id="@+id/form_rating_score"/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Save"
-            android:id="@+id/form_button_save"/>
-
     </LinearLayout>
 
 </ScrollView>
