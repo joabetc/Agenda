@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:id="@+id/students_list" />
 
-    <Button
+    <Button android:id="@+id/button_new"
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:text="+"
