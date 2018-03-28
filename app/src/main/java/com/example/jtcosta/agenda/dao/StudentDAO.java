@@ -15,11 +15,14 @@ public class StudentDAO extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-
+        String sql = "CREATE TABLE Students (id INTEGER PRIMARY KEY, name TEXT NOT NULL, address TEXT, phone TEXT, site TEXT, score REAL);";
+        sqLiteDatabase.execSQL(sql);
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
+        String sql = "DROP TABLE IF EXISTS Students";
+        sqLiteDatabase.execSQL(sql);
+        onCreate(sqLiteDatabase);
     }
 }
